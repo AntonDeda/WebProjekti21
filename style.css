@@ -1,216 +1,348 @@
-/*--------About---------*/
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "open sans",sans-serif;
+body{
+	margin:0;
+}
+/*---------------HEADER STARTS HERE---------------- */
+.header{
+	border-top:5px solid green;
+}
+.content{
+	/*width:960px;*/
+	width:78%;
+	position:relative;
+	/*left:180px;*/
+	left:11%;
+	
+}
+.header-top{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	height:35px;
+	margin-top:10px;
+}
+	.header-top a {
+		height: 100%;
+		width: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		border-radius: 4px;
+		margin-left: 3px;
+		background-color: #4cbc23;
+		color: white;
+	}
+#logoutBtn{
+	background-color: red;
+}
+.header-top a:hover{
+	background-color: #34ebab;
+    transition: all 0.2s ease;
 }
 
-.about-section {
-    width: 90%;
-    background: lightblue;
-    padding: 40px 0;
+.header-middle{
+	height:50px;
+	margin-top:10px;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.search{
+	display:flex;
+	align-items:center;
+}
+.search input{
+	height:30px;
+	width:70%;
+}
+.search button{
+	height:38px;
+	width:30%;
+	padding-left:7px;
+	margin-left:0;
+	background-color:#3b7a9d;
+	color:white;
 }
 
-.inner-width {
-    text-align: center;
-    max-width: 1000px;
-    overflow: hidden;
-    padding: 0 20px;
-    margin: auto;
+.header-bottom {
+	background-color: red;
+	height: 60px;
+	margin-top: 14px;
+}
+.header-bottom div{
+	display:flex;
+	align-items:center;
+}
+.header-bottom ul{
+	height:100%;
+	list-style-type:none;
+	padding-left:0;
+	display:flex;
+	flex-wrap: wrap;
+}
+.header-bottom ul li{
+	height:100%;
+	margin-right:15px;
+	margin-top:8px;
+}
+.header-bottom ul li a{
+	display:flex;
+	align-items:center;
+	height:100%;
+	text-decoration:none;
+	color:white;
+	padding:0 5px 0 5px;
+	text-transform: uppercase;
+}
+.header-bottom ul li a:hover{
+	color:black;
+	decoration: all 0.2s ease;
+}
+@media screen and (max-width: 1080px){
+	.header-bottom{
+		height:80px;
+		margin-top:30px;
+	}
+		
+}
+@media screen and (max-width: 556px){
+	.header-bottom{
+		height:100px;
+	}
+		
+}
+/*--------------HEADER ENDS HERE-------------*/
+/*--------------SLIDER STARTS HERE------------*/
+.container{
+	margin:20px 0 50px 0;
+}
+.slider{
+	display:flex;
+	justify-content:center;
+}
+.slider button{
+	cursor:pointer;
+	background-color:green;
+	width:40px;
+	height:40px;
+	text-decoration:none;
+	border-radius:100%;
+}
+.slider button:hover{
+	background-color:white;
+	decoration: 0.2s all;
+}
+.prew{
+	position:absolute;
+	top:180px;
+	left:0px;
+}
+.next{
+	position:absolute;
+	top:180px;
+	right:0px;
+}
+/*-----------SLIDER ENDS HERE-----------*/
+/*-----------CONTAINER STARTS HERE---------*/
+.permbajtja1{
+	margin-top:20px;
+	display:flex;	
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.permbajtja1 img{
+	width:225px;
+	height:180px;
+}
+.element{
+	border:1px solid black;
+	width:225px;
+}
+.permbajtja2{
+	margin-top:40px;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.instruction{
+	display:flex;
+	justify-content:space-between;
+}
+.instruction img{
+	width: 80px;
+	height: 80px;
+}
+.insideInstuction{
+	margin:0 0 10px 0;
+}
+.container a{
+	text-decoration:none;
+	font-size:13px;
+	font-style: oblique;
+	font-weight: 600;
+}
+@media screen and (max-width: 632px){
+	.permbajtja1{
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 728px){
+	.permbajtja2{
+		justify-content: center;
+		padding-bottom:40px;
+	}
+}
+/*----------CONTAINER ENDS HERE----------*/
+/*-----------FOOTER STARTS HERE-----------*/
+.footer{
+	position: fixed;
+	float:left;
+	width:100%;
+	height:50px;
+	background-color:#d6d6d6;
+	bottom:0;
+}
+.inisdeFooter{
+	display:flex;
+	justify-content:space-between;
+}
+@media screen and (max-width: 840px){
+	.footer{
+		height: 80px;
+	}
+	.inisdeFooter p{
+		padding-right: 40px;
+	}
+	.permbajtja2{
+		margin-bottom:100px;
+	}
+	.team{
+		margin-bottom:100px;
+	}
+}
+/*------------FOOTER ENDS HERE-----------*/
+/*--------Css shtese per contact us-----------*/
+.permbajtja{
+	display:flex;
+	justify-content:space-evenly;
+	border:1px solid black;
+	flex-wrap: wrap;
+	margin-bottom:100px;
+}
+.permbajtja img{
+	width:40px;
+	height:40px;
+	margin:20px 20px 0 0;
+}
+.info{
+	display:flex;
+	margin-bottom:50px;
+}
+.permbajtja label{
+	font-size:18px;
+	font-weight:bold;
+}
+.text-input{
+	width:100%;
+}
+#country{
+	width:100%;
+}
+/* Css shtes per about us */
+.titleContact{
+	display:flex;
+	justify-content:center;
+}
+.permbjajta-aboutUs{
+	margin-bottom:100px;
+	justify-content: center;
+}
+.permbjajta-aboutUs p{
+	text-align:center;
+	text-size:20px;
+}
+.permbjajta-aboutUs img{
+	width:150px;
+	border-radius:100%;
+}
+.team{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.team-person{
+	border:1px solid black;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.team-person img{
+	width:180px;
+	height:180px;
+}
+.team h2{
+	margin:0;
+}
+.teamPersonProfili{
+	margin-top:20px;
+	border:1px solid black;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+@media screen and(max-width: 423px){
+	.permbjajta-aboutUs{
+		align-items: center;
+	}
+}
+/*Ketu fillon login Register */
+
+.loginRegisterContainer{
+	border:1px solid black;
+	display:flex;
+	justify-content:center;
+}
+.loginRegister{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	border:1px solid black;
+	width:350px;
+	margin:20px 0 20px 0;
+}
+.loginRegister img{
+	width:60%;
+	height:35%;
+	margin-top:10px;
+}
+.loginRegister form{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:80%;
+}
+.loginRegister form input{
+	width:100%;
+	height:30px;
+	margin-top:20px;
+}
+.formButton{
+	height:40px;
+	width:100px;
+	border-radius:10%;
+	background-color:green;
+	color:white;
+	margin-top:10px;
+}
+.hidden{
+	display:none;
 }
 
-.about-section h1 {
-    text-align: center;
+/*--------Ketu fillon css per stafiShow---------- */
+.teamPersonProfili img{
+	width:20%;
 }
-
-.border {
-    width: 100px;
-    height: 3px;
-    background: lightblue;
-    margin: 40px auto;
-}
-
-.about-section-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.about-section-col {
-    flex: 50%;
-}
-
-.about {
-    padding-right: 30px;
-}
-
-    .about p {
-        text-align: justify;
-        margin-bottom: 20px;
-    }
-
-    .about a {
-        display: inline-block;
-        text-decoration: none;
-        border: 2px solid lightblue;
-        border-radius: 24px;
-        padding: 8px 40px;
-        transition: 0.4s linear;
-    }
-
-        .about a:hover {
-            color: #333;
-            background: lightblue;
-        }
-
-.skills {
-    padding-left: 30px;
-}
-
-.skill {
-    margin-bottom: 10px;
-}
-
-.progress {
-    width: 100%;
-    height: 12px;
-    background: #ddd;
-    border-radius: 12px;
-}
-
-.progress-bar {
-    height: 12px;
-    background: lightblue;
-    border-radius: 12px;
-}
-
-.p1 {
-    width: 90%;
-}
-
-.p2 {
-    width: 70%;
-}
-
-.p3 {
-    width: 50%;
-}
-
-.p4 {
-    width: 45%;
-}
-
-.p5 {
-    width: 30%;
-}
-
-.progress-bar span {
-    float: right;
-    margin-right: 6px;
-    line-height: 13px;
-    color: #333;
-    font-size: 12px;
-}
-
-@media screen and (max-width:700px) {
-    .about-section-col {
-        flex: 100%;
-        margin: 10px 0;
-    }
-
-    .about, .skills {
-        padding: 0;
-    }
-
-    .about {
-        text-align: center;
-    }
-}
-
-/*-------Filmat---------*/
-#filmat {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    vertical-align: middle;
-    padding: 40px 1;
-    background: #efefef;
-}
-
-.conteiner h1 {
-    text-align: center;
-}
-
-.single-filmat {
-    border: 20px solid #efefef;
-    margin: 0;
-    display: inline-block;
-    width: 100%;
-    background-color: #fff;
-    transition: 0.5s;
-}
-
-    .single-filmat:hover {
-        box-shadow: 0 2px 50px #333;
-    }
-
-.kategorite-head {
-    background-color: lightblue;
-    display: inline;
-    float: left;
-    padding: 10px 5px;
-    text-align: center;
-    width: 100%
-}
-
-    .kategorite-head h2 {
-        color: #fff;
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 5px;
-        padding: 5px;
-    }
-
-    .kategorite-head p {
-        color: #808080;
-        font-weight: bold;
-        line-height: 30px;
-    }
-
-.kategorite-button {
-    display: block;
-    padding: 100px 39px 30px;
-    text-align: center;
-    width: 40%;
-}
-
-.meshume-btn {
-    background-color: #2196f3;
-    border-radius: 3px;
-    display: inline-block;
-    position: center;
-    font-size: 15px;
-    padding: 10px 70px;
-    transition: 0.5s;
-}
-
-    .meshume-btn:hover {
-        border-color: 1px solid #fff;
-        background-color: #3f51b5;
-    }
-
-a {
-    text-decoration: none !important;
-    color: #333;
-    !important;
-}
-
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 33.33%;
-    padding: 5px;
+.teamPersonProfili{
+	margin-bottom:100px;
 }

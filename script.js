@@ -1,1 +1,0 @@
-const name= document.getElementById('Emri perdoruesit')
